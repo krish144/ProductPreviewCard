@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.google.com/specimen/Fraunces');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root{
+    --color-green:hsl(158, 36%, 37%);
+    --color-background:hsl(30, 38%, 92%);
+    --color-darkblue:hsl(212, 21%, 14%);
+    --color-blue:hsl(228, 12%, 48%);
+    --color-white:hsl(0, 0%, 100%);
+}
+
+body{
+    background-color: var(--color-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    font-family:'Montserrat', sans-serif;
+}
+
+#card{
+    display: flex;
+    background-color: var(--color-white);
+    max-width: 650px;
+    border-radius: 12px;
+}
+
+#mobile{
+    display: none;
+}
+
+#left img{
+    width: 100%;
+    height: 100%;
+    border-radius:12px 0px 0px 12px;
+}
+
+#right{
+    width: 230px;
+    padding: 40px;
+}
+
+#right span{
+    color: gray;
+    font-size: 14px;
+    
+}
+
+#heading{
+    font-family:'Fraunces', serif;
+    font-weight: 800;
+    margin-top: 10px;
+}
+#para{
+    font-size: 14px;
+    line-height: 27px;
+}
+
+#flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 220px;
+}
+
+#offer{
+    color: var(--color-green);
+    font-family: 'Fraunces', serif;
+}
+
+#btn{
+    width:100%;
+    display: flex;
+    font-size: 14px;
+    font-weight: 600;
+    justify-content: center;
+    padding: 15px 40px ;
+    border-radius: 12px;
+    border: none;
+    background-color: var(--color-green);
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+#btn img{
+   margin-right: 4px;
+}
+
+@media(max-width:630px){
+    #card{
+        flex-direction: column;
+        margin-bottom: 20%;
+    }
+    #desktop{
+        display: none;
+
+    }
+    #mobile{
+        display: block;
+        
+    }
+
+    #left img{
+        width: 100%;
+        border-radius: 12px 12px 0px 0px;
+    }
+
+    
+    #right{
+        width: 90%;
+        padding: 20px;
+    }
+
+    #btn{
+        
+       padding: 15px 80px ;
+    }
+}
